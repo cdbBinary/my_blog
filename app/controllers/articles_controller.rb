@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
 #edit, create, update and destroy.
 
 	def index
-
+		@articles = Article.all
 	end
 
 	def show
