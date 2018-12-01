@@ -10,10 +10,9 @@ class ArticlesController < ApplicationController
 		redirect_to @article
 	end
 
-	private_params
+	private
 		def article_params
 			params.require(:article).permit(:title, :text)
 		end
-
-
+	
 end
