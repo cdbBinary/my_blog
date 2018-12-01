@@ -4,6 +4,16 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
+
+# Because you're working in the development 
+# environment by default, this command will 
+# apply to the database defined in the development 
+# section of your config/database.yml file. 
+# If you would like to execute migrations in 
+# another environment, for instance in production, 
+# you must explicitly pass it when invoking the 
+# command: bin/rails db:migrate RAILS_ENV=production.
+
 default: &default
   adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
